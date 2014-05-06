@@ -21,6 +21,11 @@
 		7005087119180D360005D659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7005085319180D350005D659 /* UIKit.framework */; };
 		7005087919180D360005D659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7005087719180D360005D659 /* InfoPlist.strings */; };
 		7005087B19180D360005D659 /* _TD4WTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7005087A19180D360005D659 /* _TD4WTests.m */; };
+		70050889191836770005D659 /* td4w.png in Resources */ = {isa = PBXBuildFile; fileRef = 70050886191836770005D659 /* td4w.png */; };
+		7005088A191836770005D659 /* td4w2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70050887191836770005D659 /* td4w2.png */; };
+		7005088C191838790005D659 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7005088B191838790005D659 /* AVFoundation.framework */; };
+		7005088E191839A50005D659 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7005088D191839A50005D659 /* audio.mp3 */; };
+		7005089119188F600005D659 /* WSCoachMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7005089019188F600005D659 /* WSCoachMarksView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		7005087619180D360005D659 /* #TD4WTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "#TD4WTests-Info.plist"; sourceTree = "<group>"; };
 		7005087819180D360005D659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7005087A19180D360005D659 /* _TD4WTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _TD4WTests.m; sourceTree = "<group>"; };
+		70050886191836770005D659 /* td4w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = td4w.png; sourceTree = "<group>"; };
+		70050887191836770005D659 /* td4w2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = td4w2.png; sourceTree = "<group>"; };
+		7005088B191838790005D659 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7005088D191839A50005D659 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
+		7005088F19188F5B0005D659 /* WSCoachMarksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCoachMarksView.h; sourceTree = "<group>"; };
+		7005089019188F600005D659 /* WSCoachMarksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCoachMarksView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7005088C191838790005D659 /* AVFoundation.framework in Frameworks */,
 				7005085219180D350005D659 /* CoreGraphics.framework in Frameworks */,
 				7005085419180D350005D659 /* UIKit.framework in Frameworks */,
 				7005085019180D350005D659 /* Foundation.framework in Frameworks */,
@@ -82,6 +94,7 @@
 		7005084319180D350005D659 = {
 			isa = PBXGroup;
 			children = (
+				70050884191836770005D659 /* resources */,
 				7005085519180D350005D659 /* #TD4W */,
 				7005087419180D360005D659 /* #TD4WTests */,
 				7005084E19180D350005D659 /* Frameworks */,
@@ -101,6 +114,7 @@
 		7005084E19180D350005D659 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7005088B191838790005D659 /* AVFoundation.framework */,
 				7005084F19180D350005D659 /* Foundation.framework */,
 				7005085119180D350005D659 /* CoreGraphics.framework */,
 				7005085319180D350005D659 /* UIKit.framework */,
@@ -150,6 +164,18 @@
 				7005087719180D360005D659 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70050884191836770005D659 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7005089019188F600005D659 /* WSCoachMarksView.m */,
+				7005088F19188F5B0005D659 /* WSCoachMarksView.h */,
+				7005088D191839A50005D659 /* audio.mp3 */,
+				70050886191836770005D659 /* td4w.png */,
+				70050887191836770005D659 /* td4w2.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7005086819180D350005D659 /* Images.xcassets in Resources */,
+				7005088E191839A50005D659 /* audio.mp3 in Resources */,
+				70050889191836770005D659 /* td4w.png in Resources */,
 				7005085A19180D350005D659 /* InfoPlist.strings in Resources */,
 				7005086319180D350005D659 /* Main.storyboard in Resources */,
+				7005088A191836770005D659 /* td4w2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +280,7 @@
 			files = (
 				7005086619180D350005D659 /* ViewController.m in Sources */,
 				7005086019180D350005D659 /* AppDelegate.m in Sources */,
+				7005089119188F600005D659 /* WSCoachMarksView.m in Sources */,
 				7005085C19180D350005D659 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +404,7 @@
 		7005087F19180D360005D659 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "#TD4W/#TD4W-Prefix.pch";
@@ -387,7 +417,7 @@
 		7005088019180D360005D659 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "#TD4W/#TD4W-Prefix.pch";
