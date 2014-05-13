@@ -18,6 +18,9 @@
     
     [super viewDidLoad];
     [self makeButton]; // create our button
+    [self disclaimerButton];
+}
+-(void) disclaimerButton {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
@@ -32,7 +35,9 @@
     [self intro]; // call coachmarks
     self.view.backgroundColor = [UIColor colorWithRed:69/255.0 green:101/255.0 blue:255/255.0 alpha:1.0];
 	// Do any additional setup after loading the view, typically from a nib.
-    }
+}
+
+
 
 -(void) intro {
     NSArray *coachMarks = @[
